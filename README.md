@@ -18,3 +18,6 @@ To do this exploit, convince an admin to upload a media file with xss javascript
 ![](https://github.com/nke5ka/codepathWeek7/blob/master/3_0hack.gif)
 ![](https://github.com/nke5ka/codepathWeek7/blob/master/3_1hack.gif)
 ![](https://github.com/nke5ka/codepathWeek7/blob/master/3_2hack.gif)
+
+## WordPress 4.2-4.7.2 - Press This CSRF DoS (CVE-2017-6819)
+To perform this exploit, get a logged in admin to click on a link to a website with many lines containing `<img src='http://wpdistillery.vm/wp-admin/press-this.php?u=http%3A%2F%2Fhttps://127.0.0.1/foo.txt&url-scan-submit=Scan&a=g'>`.  Foo.txt contains many `<>` -  This setup causes the wordpress to try to scan for embedded content, leading to the server to be unresponsive for some time.
