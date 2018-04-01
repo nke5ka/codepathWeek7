@@ -12,3 +12,9 @@ To get people to run the Javascript of the XSS exploit, the attacker posts a com
 ![](https://github.com/nke5ka/codepathWeek7/blob/master/2_0hack.gif)
 ![](https://github.com/nke5ka/codepathWeek7/blob/master/2_1hack.gif)
 ![](https://github.com/nke5ka/codepathWeek7/blob/master/2_2hack.gif)
+
+## WordPress v3.6.0-v4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata (2017-6814)
+To do this exploit, convince an admin to upload a media file with xss javascript metadata - here is an example of a media file with a description and other metadata that I used: `https://www.securify.nl/advisory/SFY20160742/xss.mp3`.  Then upon viewing the attachment page, the Javascript is executed.
+![](https://github.com/nke5ka/codepathWeek7/blob/master/3_0hack.gif)
+![](https://github.com/nke5ka/codepathWeek7/blob/master/3_1hack.gif)
+![](https://github.com/nke5ka/codepathWeek7/blob/master/3_2hack.gif)
